@@ -1,0 +1,2035 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights">
+    <Prefix name="" IRI="http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This ontology measures the degree of satisfaction of the people surveyed with air travel.
+
+It is created by Alejandro Tadeo Andreu and Eric Obis Moreno</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="/Airbus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BodyReview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Boeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Business"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BusinessClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CoupleLeisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EconomyClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FamilyLeisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FirstClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Flight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Plane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Poor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PremiumEconomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Qatar_Airways"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Recomended"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ryanair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Seat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SoloLeisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Traveler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Verified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/VeryGood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/VeryPoor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDateFlight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasFlight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPlane"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasRecommended"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSeat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTravelPlane"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTraveler"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasVerified"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/body"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/day"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/destination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/modelAirbus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/modelBoeing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/month"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/nameCountry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/origin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/ratingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/statVerify"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/surname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/year"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/body1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/country1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/country2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/country3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/date1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/datefligth1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/isVerified"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/notVerified"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/plane1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/qatarArways"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rating9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/ryanair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/seat1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/travel1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/traveler1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/value1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/value2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/Airbus"/>
+        <Class IRI="/Plane"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BodyReview"/>
+        <Class IRI="/Review"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Boeing"/>
+        <Class IRI="/Plane"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Business"/>
+        <Class IRI="/Traveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BusinessClass"/>
+        <Class IRI="/Seat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Company"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPlane"/>
+            <Class IRI="/Plane"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CoupleLeisure"/>
+        <Class IRI="/Traveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EconomyClass"/>
+        <Class IRI="/Seat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FamilyLeisure"/>
+        <Class IRI="/Traveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FirstClass"/>
+        <Class IRI="/Seat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Flight"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasCompany"/>
+            <Class IRI="/Company"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Good"/>
+        <Class IRI="/Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Poor"/>
+        <Class IRI="/Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PremiumEconomy"/>
+        <Class IRI="/Seat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Qatar_Airways"/>
+        <Class IRI="/Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Recomended"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/value"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Review"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/title"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ryanair"/>
+        <Class IRI="/Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SoloLeisure"/>
+        <Class IRI="/Traveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Traveler"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VeryGood"/>
+        <Class IRI="/Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VeryPoor"/>
+        <Class IRI="/Rating"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/Airbus"/>
+        <Class IRI="/Boeing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Business"/>
+        <Class IRI="/CoupleLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Business"/>
+        <Class IRI="/FamilyLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Business"/>
+        <Class IRI="/SoloLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/BusinessClass"/>
+        <Class IRI="/EconomyClass"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/BusinessClass"/>
+        <Class IRI="/FirstClass"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/BusinessClass"/>
+        <Class IRI="/PremiumEconomy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/CoupleLeisure"/>
+        <Class IRI="/FamilyLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/CoupleLeisure"/>
+        <Class IRI="/SoloLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/EconomyClass"/>
+        <Class IRI="/FirstClass"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/EconomyClass"/>
+        <Class IRI="/PremiumEconomy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/FamilyLeisure"/>
+        <Class IRI="/SoloLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/FirstClass"/>
+        <Class IRI="/PremiumEconomy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Good"/>
+        <Class IRI="/Poor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Good"/>
+        <Class IRI="/VeryGood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Good"/>
+        <Class IRI="/VeryPoor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Poor"/>
+        <Class IRI="/VeryGood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Poor"/>
+        <Class IRI="/VeryPoor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Qatar_Airways"/>
+        <Class IRI="/Ryanair"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/VeryGood"/>
+        <Class IRI="/VeryPoor"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="/BodyReview"/>
+        <NamedIndividual IRI="/body1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Country"/>
+        <NamedIndividual IRI="/country1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Country"/>
+        <NamedIndividual IRI="/country2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Country"/>
+        <NamedIndividual IRI="/country3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Date"/>
+        <NamedIndividual IRI="/date1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Date"/>
+        <NamedIndividual IRI="/datefligth1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Verified"/>
+        <NamedIndividual IRI="/isVerified"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Verified"/>
+        <NamedIndividual IRI="/notVerified"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Airbus"/>
+        <NamedIndividual IRI="/plane1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Plane"/>
+        <NamedIndividual IRI="/plane1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Company"/>
+        <NamedIndividual IRI="/qatarArways"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Qatar_Airways"/>
+        <NamedIndividual IRI="/qatarArways"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/VeryPoor"/>
+        <NamedIndividual IRI="/rating1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/VeryPoor"/>
+        <NamedIndividual IRI="/rating2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Rating"/>
+        <NamedIndividual IRI="/rating9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Company"/>
+        <NamedIndividual IRI="/ryanair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Ryanair"/>
+        <NamedIndividual IRI="/ryanair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/EconomyClass"/>
+        <NamedIndividual IRI="/seat1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Seat"/>
+        <NamedIndividual IRI="/seat1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Flight"/>
+        <NamedIndividual IRI="/travel1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Business"/>
+        <NamedIndividual IRI="/traveler1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Traveler"/>
+        <NamedIndividual IRI="/traveler1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Recomended"/>
+        <NamedIndividual IRI="/value1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Recomended"/>
+        <NamedIndividual IRI="/value2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDate"/>
+        <NamedIndividual IRI="/body1"/>
+        <NamedIndividual IRI="/date1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasFlight"/>
+        <NamedIndividual IRI="/body1"/>
+        <NamedIndividual IRI="/travel1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasRating"/>
+        <NamedIndividual IRI="/body1"/>
+        <NamedIndividual IRI="/rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasRecommended"/>
+        <NamedIndividual IRI="/body1"/>
+        <NamedIndividual IRI="/value2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSeat"/>
+        <NamedIndividual IRI="/body1"/>
+        <NamedIndividual IRI="/seat1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasTraveler"/>
+        <NamedIndividual IRI="/body1"/>
+        <NamedIndividual IRI="/traveler1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasVerified"/>
+        <NamedIndividual IRI="/body1"/>
+        <NamedIndividual IRI="/isVerified"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasPlane"/>
+        <NamedIndividual IRI="/qatarArways"/>
+        <NamedIndividual IRI="/plane1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasCompany"/>
+        <NamedIndividual IRI="/travel1"/>
+        <NamedIndividual IRI="/qatarArways"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDateFlight"/>
+        <NamedIndividual IRI="/travel1"/>
+        <NamedIndividual IRI="/datefligth1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasTravelPlane"/>
+        <NamedIndividual IRI="/travel1"/>
+        <NamedIndividual IRI="/plane1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasCountry"/>
+        <NamedIndividual IRI="/traveler1"/>
+        <NamedIndividual IRI="/country2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasReview"/>
+        <NamedIndividual IRI="/traveler1"/>
+        <NamedIndividual IRI="/body1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/body"/>
+        <NamedIndividual IRI="/body1"/>
+        <Literal>I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/title"/>
+        <NamedIndividual IRI="/body1"/>
+        <Literal>&quot;no attempt to address our complaint&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nameCountry"/>
+        <NamedIndividual IRI="/country1"/>
+        <Literal>Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nameCountry"/>
+        <NamedIndividual IRI="/country2"/>
+        <Literal>Australia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nameCountry"/>
+        <NamedIndividual IRI="/country3"/>
+        <Literal>Portugal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/day"/>
+        <NamedIndividual IRI="/date1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/month"/>
+        <NamedIndividual IRI="/date1"/>
+        <Literal>February</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/year"/>
+        <NamedIndividual IRI="/date1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/month"/>
+        <NamedIndividual IRI="/datefligth1"/>
+        <Literal>November</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/year"/>
+        <NamedIndividual IRI="/datefligth1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2023</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/statVerify"/>
+        <NamedIndividual IRI="/isVerified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/statVerify"/>
+        <NamedIndividual IRI="/notVerified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/modelAirbus"/>
+        <NamedIndividual IRI="/plane1"/>
+        <Literal>A380</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ratingValue"/>
+        <NamedIndividual IRI="/rating9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/destination"/>
+        <NamedIndividual IRI="/travel1"/>
+        <Literal>Perth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/origin"/>
+        <NamedIndividual IRI="/travel1"/>
+        <Literal>Doha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/name"/>
+        <NamedIndividual IRI="/traveler1"/>
+        <Literal>Wayne</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/surname"/>
+        <NamedIndividual IRI="/traveler1"/>
+        <Literal>Burgess</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/value"/>
+        <NamedIndividual IRI="/value1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/value"/>
+        <NamedIndividual IRI="/value2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasReview"/>
+        <ObjectProperty IRI="/hasTraveler"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasCompany"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasCountry"/>
+        <Class IRI="/Traveler"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDate"/>
+        <Class IRI="/Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDateFlight"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasFlight"/>
+        <Class IRI="/Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPlane"/>
+        <Class IRI="/Company"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasRating"/>
+        <Class IRI="/Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasRecommended"/>
+        <Class IRI="/Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasReview"/>
+        <Class IRI="/Traveler"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSeat"/>
+        <Class IRI="/Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasTravelPlane"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasTraveler"/>
+        <Class IRI="/Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasVerified"/>
+        <Class IRI="/Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasCompany"/>
+        <Class IRI="/Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasCountry"/>
+        <Class IRI="/Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasDate"/>
+        <Class IRI="/Date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasDateFlight"/>
+        <Class IRI="/Date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFlight"/>
+        <Class IRI="/Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPlane"/>
+        <Class IRI="/Plane"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasRating"/>
+        <Class IRI="/Rating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasRecommended"/>
+        <Class IRI="/Recomended"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasReview"/>
+        <Class IRI="/Review"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSeat"/>
+        <Class IRI="/Seat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasTravelPlane"/>
+        <Class IRI="/Plane"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasTraveler"/>
+        <Class IRI="/Traveler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasVerified"/>
+        <Class IRI="/Verified"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="/body"/>
+        <Class IRI="/BodyReview"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/day"/>
+        <Class IRI="/Date"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/destination"/>
+        <Class IRI="/Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/modelAirbus"/>
+        <Class IRI="/Airbus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/modelBoeing"/>
+        <Class IRI="/Boeing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/month"/>
+        <Class IRI="/Date"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/name"/>
+        <Class IRI="/Traveler"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/nameCountry"/>
+        <Class IRI="/Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/origin"/>
+        <Class IRI="/Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ratingValue"/>
+        <Class IRI="/Rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/statVerify"/>
+        <Class IRI="/Verified"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/surname"/>
+        <Class IRI="/Traveler"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/title"/>
+        <Class IRI="/Review"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/value"/>
+        <Class IRI="/Recomended"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/year"/>
+        <Class IRI="/Date"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/body"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/day"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/destination"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/modelAirbus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/modelBoeing"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/month"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/nameCountry"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/origin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/ratingValue"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/statVerify"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/surname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/value"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/year"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>If the value of the rating is 3 to 4 is a Poor Review</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>PoorReviewRating</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Rating"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/ratingValue"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="/val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="/val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/Poor"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>If the value of the rating is 5 to 7 is a good review</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>GoodReviewRating</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Rating"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/ratingValue"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="/val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="/val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/Good"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>If the value of the rating is 8 to 10 is a Very Good Review</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>VeryGoodRating</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Rating"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/ratingValue"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="/val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThanOrEqual">
+                <Variable IRI="/val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/VeryGood"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>If the value of the rating of the review is 1 to 3 is a very poor review</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>VeryPoorReview</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Rating"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/ratingValue"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThanOrEqual">
+                <Variable IRI="/val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="/val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="/VeryPoor"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Airbus</IRI>
+        <Literal>Is the manufacturer of the plane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Airbus</IRI>
+        <Literal>Airbus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>/Airbus</IRI>
+        <Literal>https://dbpedia.org/page/Airbus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/BodyReview</IRI>
+        <Literal>is the body of the review</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/BodyReview</IRI>
+        <Literal>BodyReview</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Boeing</IRI>
+        <Literal>is the manufacturer of the plane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Boeing</IRI>
+        <Literal>Boeing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>/Boeing</IRI>
+        <Literal>https://dbpedia.org/page/Boeing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Business</IRI>
+        <Literal>travel for Business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Business</IRI>
+        <Literal>Business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/BusinessClass</IRI>
+        <Literal>Seat in business class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/BusinessClass</IRI>
+        <Literal>BusinessClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Company</IRI>
+        <Literal xml:lang="en">This is an airline company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Company</IRI>
+        <Literal xml:lang="en">Company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Country</IRI>
+        <Literal>Is the country of the traveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Country</IRI>
+        <Literal>Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CoupleLeisure</IRI>
+        <Literal>travel for Couple Leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CoupleLeisure</IRI>
+        <Literal>CoupleLeisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Date</IRI>
+        <Literal>Is the date of the travel and the date of de review</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Date</IRI>
+        <Literal>Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/EconomyClass</IRI>
+        <Literal>Seat in economy class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/EconomyClass</IRI>
+        <Literal>EconomyClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FamilyLeisure</IRI>
+        <Literal>travel for Family Leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/FamilyLeisure</IRI>
+        <Literal>FamilyLeisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FirstClass</IRI>
+        <Literal>Seat in first class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/FirstClass</IRI>
+        <Literal>FirstClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Flight</IRI>
+        <Literal>It is the flight information, it provides the origin and destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Flight</IRI>
+        <Literal>Flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Good</IRI>
+        <Literal>It is whether the flight rating is good</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Good</IRI>
+        <Literal xml:lang="en">Good</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Plane</IRI>
+        <Literal>It is the information of the plane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Plane</IRI>
+        <Literal>Plane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Poor</IRI>
+        <Literal>It is whether the flight rating is poor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Poor</IRI>
+        <Literal>Poor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PremiumEconomy</IRI>
+        <Literal>Seat in Premium Economy class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PremiumEconomy</IRI>
+        <Literal>PremiumEconomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Qatar_Airways</IRI>
+        <Literal>Is an Airline company of Qatar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Qatar_Airways</IRI>
+        <Literal>Qatar_Airways</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>/Qatar_Airways</IRI>
+        <Literal>https://dbpedia.org/page/Qatar_Airways</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rating</IRI>
+        <Literal>Is the rating of the review of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Rating</IRI>
+        <Literal>Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Recomended</IRI>
+        <Literal>The review recommends traveling with that company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Recomended</IRI>
+        <Literal>Recommended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Review</IRI>
+        <Literal>is the title of the review</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Review</IRI>
+        <Literal>Review</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Ryanair</IRI>
+        <Literal>Is an airplane company of Ireland</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Ryanair</IRI>
+        <Literal>Ryanair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>/Ryanair</IRI>
+        <Literal>https://dbpedia.org/page/Ryanair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Seat</IRI>
+        <Literal>It&apos;s the traveler&apos;s seat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Seat</IRI>
+        <Literal>Seat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SoloLeisure</IRI>
+        <Literal>travel for Solo Leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SoloLeisure</IRI>
+        <Literal>SoloLeisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Traveler</IRI>
+        <Literal>Information of the traveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Traveler</IRI>
+        <Literal>Traveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Verified</IRI>
+        <Literal>It is the review verified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Verified</IRI>
+        <Literal>Verified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/VeryGood</IRI>
+        <Literal>It is whether the flight rating is very good</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/VeryGood</IRI>
+        <Literal>VeryGood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/VeryPoor</IRI>
+        <Literal>It is whether the flight rating is very poor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/VeryPoor</IRI>
+        <Literal>VeryPoor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/body</IRI>
+        <Literal xml:lang="en">Description of the review</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/body</IRI>
+        <Literal xml:lang="en">body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/body1</IRI>
+        <Literal>The first body of review with his title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/body1</IRI>
+        <Literal xml:lang="en">body1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/country1</IRI>
+        <Literal xml:lang="en">This country is Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/country1</IRI>
+        <Literal xml:lang="en">country1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>/country1</IRI>
+        <Literal>https://dbpedia.org/page/Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/country2</IRI>
+        <Literal xml:lang="en">This country is Australia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/country2</IRI>
+        <Literal xml:lang="en">country2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>/country2</IRI>
+        <Literal>https://dbpedia.org/page/Australia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/date1</IRI>
+        <Literal xml:lang="en">Date of the review</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/date1</IRI>
+        <Literal xml:lang="en">dateReview1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/datefligth1</IRI>
+        <Literal xml:lang="en">Date of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/datefligth1</IRI>
+        <Literal xml:lang="en">dateFlight1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/day</IRI>
+        <Literal xml:lang="en">Day 1 to 31</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/day</IRI>
+        <Literal xml:lang="en">day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/destination</IRI>
+        <Literal xml:lang="en">Destination of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/destination</IRI>
+        <Literal xml:lang="en">destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasCompany</IRI>
+        <Literal>the flight is operated by a company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasCompany</IRI>
+        <Literal>hasCompany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasCountry</IRI>
+        <Literal>The traveler is from a country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasCountry</IRI>
+        <Literal>hasCountry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasDate</IRI>
+        <Literal>The review from the traveler has date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasDate</IRI>
+        <Literal>hasDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasDateFlight</IRI>
+        <Literal>The flight has a date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasDateFlight</IRI>
+        <Literal>hasDateFlight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasFlight</IRI>
+        <Literal xml:lang="en">The review is from one flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasFlight</IRI>
+        <Literal xml:lang="en">hasFlight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasPlane</IRI>
+        <Literal>Company has plane for flights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasPlane</IRI>
+        <Literal>hasPlane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasRating</IRI>
+        <Literal>The review has a rating valoration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasRating</IRI>
+        <Literal>hasRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasRecommended</IRI>
+        <Literal>Is the flight recommended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasRecommended</IRI>
+        <Literal>hasRecommended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasReview</IRI>
+        <Literal>The traveler make a review for his flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasReview</IRI>
+        <Literal>hasReview</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasSeat</IRI>
+        <Literal>The traveler do a review from  a Seat for the travel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasSeat</IRI>
+        <Literal>hasSeat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasTravelPlane</IRI>
+        <Literal xml:lang="en">The plane from the travel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasTravelPlane</IRI>
+        <Literal xml:lang="en">hasTravelPlane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasTraveler</IRI>
+        <Literal>The review has a traveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasTraveler</IRI>
+        <Literal>hasTraveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasVerified</IRI>
+        <Literal>The review is verified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasVerified</IRI>
+        <Literal>hasVerified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/isVerified</IRI>
+        <Literal xml:lang="en">The review is verified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/isVerified</IRI>
+        <Literal xml:lang="en">isVerified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/modelAirbus</IRI>
+        <Literal xml:lang="en">Model of plane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/modelAirbus</IRI>
+        <Literal xml:lang="en">modelAirbus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/modelBoeing</IRI>
+        <Literal xml:lang="en">model of plane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/modelBoeing</IRI>
+        <Literal xml:lang="en">modelBoeing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/month</IRI>
+        <Literal xml:lang="en">Month of the travel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/month</IRI>
+        <Literal xml:lang="en">month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/name</IRI>
+        <Literal xml:lang="en">Name of traveler or name of country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/name</IRI>
+        <Literal xml:lang="en">nameTraveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/nameCountry</IRI>
+        <Literal xml:lang="en">Name of the country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/nameCountry</IRI>
+        <Literal xml:lang="en">nameCountry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/notVerified</IRI>
+        <Literal xml:lang="en">The review is not verified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/notVerified</IRI>
+        <Literal xml:lang="en">notVerified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/origin</IRI>
+        <Literal xml:lang="en">Name of the city origin the travel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/origin</IRI>
+        <Literal xml:lang="en">origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/plane1</IRI>
+        <Literal>First type of plane A380 from Airbus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/plane1</IRI>
+        <Literal>plane1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>/plane1</IRI>
+        <Literal>https://dbpedia.org/page/Airbus_A380</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/qatarArways</IRI>
+        <Literal xml:lang="en">Qatar arways instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/qatarArways</IRI>
+        <Literal xml:lang="en">qatarArways</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating1</IRI>
+        <Literal xml:lang="en">Rating with the value is 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating1</IRI>
+        <Literal xml:lang="en">rating1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating10</IRI>
+        <Literal xml:lang="en">The value of rating is 10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating10</IRI>
+        <Literal xml:lang="en">rating10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating2</IRI>
+        <Literal xml:lang="en">rating value 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating2</IRI>
+        <Literal xml:lang="en">rating2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating3</IRI>
+        <Literal xml:lang="en">The value of rating is 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating3</IRI>
+        <Literal xml:lang="en">rating3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating4</IRI>
+        <Literal xml:lang="en">The value of rating is 4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating4</IRI>
+        <Literal xml:lang="en">rating4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating5</IRI>
+        <Literal xml:lang="en">The value of rating is 5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating5</IRI>
+        <Literal>rating5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating6</IRI>
+        <Literal xml:lang="en">The value of rating is 6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating6</IRI>
+        <Literal xml:lang="en">rating6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating7</IRI>
+        <Literal xml:lang="en">The value of rating is 7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating7</IRI>
+        <Literal xml:lang="en">rating7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating8</IRI>
+        <Literal xml:lang="en">The value of rating is 8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating8</IRI>
+        <Literal xml:lang="en">rating8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rating9</IRI>
+        <Literal xml:lang="en">The value of rating is 9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rating9</IRI>
+        <Literal xml:lang="en">rating9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ratingValue</IRI>
+        <Literal xml:lang="en">Rating Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ratingValue</IRI>
+        <Literal xml:lang="en">ratingValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ryanair</IRI>
+        <Literal xml:lang="en">The ryanair instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ryanair</IRI>
+        <Literal xml:lang="en">ryanair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/seat1</IRI>
+        <Literal xml:lang="en">Seat of economy class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/seat1</IRI>
+        <Literal xml:lang="en">seat1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/statVerify</IRI>
+        <Literal xml:lang="en">This is the state that the review is verified or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/statVerify</IRI>
+        <Literal xml:lang="en">statVerify</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/surname</IRI>
+        <Literal xml:lang="en">Surname of the traveler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/surname</IRI>
+        <Literal xml:lang="en">surname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/title</IRI>
+        <Literal xml:lang="en">Title of the review</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/title</IRI>
+        <Literal xml:lang="en">title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/travel1</IRI>
+        <Literal xml:lang="en">First travel From Doha to Perth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/travel1</IRI>
+        <Literal>travel1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/traveler1</IRI>
+        <Literal xml:lang="en">Information of the traveler 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/traveler1</IRI>
+        <Literal xml:lang="en">traveler1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/value</IRI>
+        <Literal xml:lang="en">Value true or false if the travel is recommended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/value</IRI>
+        <Literal xml:lang="en">recomendedValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/value1</IRI>
+        <Literal xml:lang="en">True value for recomended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/value1</IRI>
+        <Literal xml:lang="en">isRecomended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/value2</IRI>
+        <Literal xml:lang="en">False value because is not recomended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/value2</IRI>
+        <Literal xml:lang="en">notRecomended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/year</IRI>
+        <Literal xml:lang="en">Year of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/year</IRI>
+        <Literal xml:lang="en">year</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
